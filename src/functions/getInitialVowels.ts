@@ -7,7 +7,6 @@ function getInitialVowels(word: string): {
   initialVowels: string
 } {
   const splitWord = Array.from(word.matchAll(initialVowelsPattern))[0]
-  //console.log(splitWord)
 
   return {remainder: splitWord[2] ?? '', initialVowels: splitWord[1] ?? ''}
 }
