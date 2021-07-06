@@ -4,9 +4,11 @@
   "description": "A tool for breaking Lithuanian IPA to syllables",
   "main": "build/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest $1",
     "build": "tsc",
-    "dev:file": "tsc --watch & nodemon $1"
+    "build:watch": "tsc --watch",
+    "start": "node build/index.js",
+    "start:watch": "nodemon"
   },
   "keywords": [
     "Lithuanian",
@@ -16,9 +18,12 @@
   "author": "Andrius Simanaitis",
   "license": "ISC",
   "private": true,
-  "type": "module",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
     "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.6",
     "jest": "^27.0.6",
     "nodemon": "^2.0.9",
     "ts-jest": "^27.0.3",

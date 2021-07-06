@@ -1,3 +1,5 @@
-import {add} from './add.js'
+import {getFinalConsonants} from './getFinalConsonants'
+import {getInitialVowels} from './getInitialVowels'
+import {syllabiseVowels} from './syllabiseVowels'
 
-export {add}
+export {getFinalConsonants, getInitialVowels, syllabiseVowels}
