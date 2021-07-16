@@ -1,5 +1,4 @@
-import {getFinalConsonants} from './getFinalConsonants'
-import {getInitialVowels} from './getInitialVowels'
 import {syllabiseVowels} from './syllabiseVowels'
+import {syllabiseSequences} from './syllabiseSequences'
 
-export {getFinalConsonants, getInitialVowels, syllabiseVowels}
+export {syllabiseVowels, syllabiseSequences}

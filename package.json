@@ -4,7 +4,7 @@
   "description": "A tool for breaking Lithuanian IPA to syllables",
   "main": "build/index.js",
   "scripts": {
-    "test": "jest $1",
+    "test": "jest",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "start": "node build/index.js",

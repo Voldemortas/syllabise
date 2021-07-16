@@ -9,15 +9,13 @@ const glide = '̯'
 const semi = 'ˑ'
 const long = 'ː'
 
-const mods = [glide, semi, long]
-
 const joined = {
-  C: S.join('') + T.join('') + R.join('') + palatalised,
-  S: S.join('') + palatalised,
-  T: T.join('') + palatalised,
-  R: R.join('') + palatalised,
+  C: S.join('') + T.join('') + R.join('') + palatalised + semi,
+  S: `[${S.join('')}]${palatalised}?${semi}?`,
+  T: `[${T.join('')}]${palatalised}?${semi}?`,
+  R: `[${R.join('')}]${palatalised}?${semi}?`,
   V: V.join(''),
-  Vm: V.join('') + mods.join(''),
+  Vm: `[${V.join('')}]${glide}?${palatalised}?${semi}?`,
 }
 
-export {V, S, T, R, mods, palatalised, joined, glide, semi, long}
+export {joined, glide, semi, long}
