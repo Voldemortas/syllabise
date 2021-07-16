@@ -16,16 +16,12 @@ usage:
 
 ```
 const syllabise = require('syllabise')
-
 console.log(syllabise('ɫaːbɐs pɐsaˑʊ̯lʲɪ'))//ɫaːbɐs pɐ.saˑʊ̯.lʲɪ
-
 ```
 
 or
 
 ```
 import syllabise from 'syllabise'
-
 console.log(syllabise('ɫaːbɐs pɐsaˑʊ̯lʲɪ'))//ɫaːbɐs pɐ.saˑʊ̯.lʲɪ
-
 ```
