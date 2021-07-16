@@ -1,6 +1,6 @@
 {
-  "name": "syllable",
-  "version": "0.0.1",
+  "name": "syllabise",
+  "version": "1.0.0",
   "description": "A tool for breaking Lithuanian IPA to syllables",
   "main": "build/index.js",
   "scripts": {
