@@ -15,7 +15,16 @@ install: `npm install https://github.com/Voldemortas/syllable` (yarn or whatever
 usage:
 
 ```
-const syllabise = require('syllable')
+const syllabise = require('syllabise')
+
+console.log(syllabise('ɫaːbɐs pɐsɐʊ̯lʲɪ'))//ɫaːbɐs pɐ.sɐʊ̯.lʲɪ
+
+```
+
+or
+
+```
+import syllabise from 'syllabise'
 
 console.log(syllabise('ɫaːbɐs pɐsɐʊ̯lʲɪ'))//ɫaːbɐs pɐ.sɐʊ̯.lʲɪ
 
