@@ -10,7 +10,7 @@ A tool for breaking Lithuanian IPA to syllables
 
 ## Guide
 
-install: `npm install https://github.com/Voldemortas/syllable` (yarn or whatever)
+install: `npm install https://github.com/Voldemortas/syllabise` (yarn or whatever)
 
 usage:
 
