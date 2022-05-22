@@ -8,7 +8,7 @@ const FIRS_AU = 'aˑʊ̯'
 const LAST_AU = 'ɐʊ̯ˑ'
 const S = 's'
 const T = 't'
-const R = 's'
+const R = 'r'
 const DOT = '.'
 
 describe('test syllabise', () => {
@@ -140,7 +140,17 @@ describe('test syllabise', () => {
         changed = SHORT_U + DOT + S + SHORT_U
       })
 
+      it('should syllabise V:SV', () => {
+        word = LONG_U + S + SHORT_U
+        changed = LONG_U + DOT + S + SHORT_U
+      })
+
       it('should syllabise SVSV', () => {
+        word = FIRS_AU + S + SHORT_U
+        changed = FIRS_AU + DOT + S + SHORT_U
+      })
+
+      it('should syllabise SV:SV:', () => {
         word = FIRS_AU + S + SHORT_U
         changed = FIRS_AU + DOT + S + SHORT_U
       })
@@ -150,9 +160,19 @@ describe('test syllabise', () => {
         changed = SHORT_U + DOT + S + LAST_AU + S
       })
 
+      it('should syllabise V:SV:S', () => {
+        word = LONG_U + S + LONG_U + S
+        changed = LONG_U + DOT + S + LONG_U + S
+      })
+
       it('should syllabise SjVWSjVS', () => {
         word = S + J + UO + S + J + UO + S
         changed = S + J + UO + DOT + S + J + UO + S
+      })
+
+      it('should syllabise SjV:SjVS', () => {
+        word = S + J + LONG_U + S + J + LONG_U + S
+        changed = S + J + LONG_U + DOT + S + J + LONG_U + S
       })
     })
   })

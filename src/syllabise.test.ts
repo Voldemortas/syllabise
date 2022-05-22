@@ -12,6 +12,8 @@ describe('test combined syllabise', () => {
     {input: 'ʊsʲpʲrʲɪnˑkstɐmɛ', expectedOutput: 'ʊ.sʲpʲrʲɪnˑk.stɐ.mɛ'},
     {input: 'ɐʊ̯ˑsʲɪs', expectedOutput: 'ɐʊ̯ˑ.sʲɪs'},
     {input: 'pɐɐʊ̯ˑsʲiːs', expectedOutput: 'pɐ.ɐʊ̯ˑ.sʲiːs'},
+    {input: 'ɫaːbɐs', expectedOutput: 'ɫaː.bɐs'},
+    {input: 'ɫaːbɐs pɐsaˑʊ̯lʲɪ', expectedOutput: 'ɫaː.bɐs pɐ.saˑʊ̯.lʲɪ'},
   ]
   test('should match calculated values with expected ones', () => {
     testingData.forEach((data) => {

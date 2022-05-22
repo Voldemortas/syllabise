@@ -15,7 +15,7 @@ const joined = {
   T: `[${T.join('')}]${palatalised}?${semi}?`,
   R: `[${R.join('')}]${palatalised}?${semi}?`,
   V: V.join(''),
-  Vm: `[${V.join('')}]${glide}?${palatalised}?${semi}?`,
+  Vm: `[${V.join('')}]${glide}?${palatalised}?${semi}?${long}?`,
 }
 
 export {joined, glide, semi, long}
