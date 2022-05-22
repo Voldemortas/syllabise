@@ -23,5 +23,5 @@ or
 
 ```
 import syllabise from 'syllabise'
-console.log(syllabise('ɫaːbɐs pɐsaˑʊ̯lʲɪ'))//ɫaːbɐs pɐ.saˑʊ̯.lʲɪ
+console.log(syllabise('ɫaːbɐs pɐsaˑʊ̯lʲɪ'))//ɫaː.bɐs pɐ.saˑʊ̯.lʲɪ
 ```
